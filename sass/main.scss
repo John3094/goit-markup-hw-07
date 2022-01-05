@@ -2,11 +2,25 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
-@import './base/button';
 @import './base/section';
 
 @import './components/container';
+@import './components/button';
+@import './components/logo';
+@import './components/modal';
+
 
 @import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/client';
+@import './layout/footer';
+@import './layout/gallery';
+
+
+
+
 
 
