@@ -21,24 +21,24 @@
 <body>
     <header class="header">
         <div class="container">
-        <nav class="header-navigation">
+        <nav class="header__navigation">
             <a class="link logo" href="">
                 <span class="first-logo">Web</span>Studio
             </a>
             <ul class="list header-list">
-                <li class="header-item">
-                    <a class="link header-link" href="./index.html">Студия</a></li>
-                <li class="header-item">
-                    <a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-item">
-                    <a class="link header-link" href="">Контакты</a></li>
+                <li class="header-list__item">
+                    <a class="link header__link " href="./index.html">Студия</a></li>
+                <li class="header-list__item">
+                    <a class="link header__link header__link--current" href="./portfolio.html">Портфолио</a></li>
+                <li class="header-list__item">
+                    <a class="link header__link" href="">Контакты</a></li>
             </ul>
-        <div class="header-connect">
-        <a class="link header-mail" href="mailto:info@devstudio.com">  
+        <div class="header__connect">
+        <a class="link header__connect--mail" href="mailto:info@devstudio.com">  
             <svg class="mail" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a> 
-        <a class="link header-tel" href="tel:+380961111111">  
+        <a class="link header__connect--tel" href="tel:+380961111111">  
             <svg class="tel" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg> +38 096 111 11 11</a>
@@ -49,40 +49,40 @@
     <main class="gallery">
         <section class="section">
             <div class="container">
-            <ul class="list buttom-list">
-                <li class="gallery-buttom-item">
+            <ul class="list gallery-buttom__list">
+                <li class="gallery-buttom__item">
                     <button class="gallery-button" type="button">Все</button>
                 </li>
-                <li class="gallery-buttom-item">
+                <li class="gallery-buttom__item">
                     <button class="gallery-button" type="button">Веб-сайты</button>
                 </li>
-                <li class="gallery-buttom-item">
+                <li class="gallery-buttom__item">
                     <button class="gallery-button" type="button">Приложения</button>
                 </li>
-                <li class="gallery-buttom-item">
+                <li class="gallery-buttom__item">
                     <button class="gallery-button" type="button">Дизайн</button>
                 </li>
-                <li class="gallery-buttom-item">
+                <li class="gallery-buttom__item">
                     <button class="gallery-button" type="button">Маркетинг</button>
                 </li>
             </ul>
-            <ul class="gallery-list list">
-                <li class="gallery-item">
-                    <a class="link gallery-link" href="">
-                    <div class="gallery-overlay">
-                        <img class="gallery-img"
+            <ul class="gallery__list list">
+                <li class="gallery__item">
+                    <a class="link gallery__link" href="">
+                    <div class="gallery__overlay">
+                        <img class="gallery__img"
                         src="./images/portfolio1.jpg"
                         alt="робота1"
                         width="370"
                         height="294"
                         />
-                    <p class="gallery-text-card">
+                    <p class="gallery__text-card">
                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                     </div>
-                    <div class="gallery-title-text">
-                    <h2 class="gallery-title">Технокряк</h2>
-                    <p class="gallery-text">Веб-сайт</p>
+                    <div class="gallery__title-text">
+                    <h2 class="gallery__title">Технокряк</h2>
+                    <p class="gallery__text">Веб-сайт</p>
                     </div>
                     </a>
                 </li>
@@ -242,81 +242,84 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-contact">
-        <a class="link footer-logo" href="">
-            <span class="first-logo">Web</span><span class="">Studio</span>
-        </a>
-        <address class="contact-address">
-            <ul class="contact-list list">
-                <li class="contact-item">
-                    <a 
-                        class="contact-link link"
-                        href="https://goo.gl/maps/CBitLUG9dkGeT7Bq6"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >   
-                        г. Киев, пр-т Леси Украинки, 26
+        <div class="container footer__container">
+            <div class="footer__contact">
+                <ul class="footer__list list">
+                    <a class="link footer__logo" href="">
+                        <span class="first-logo">Web</span><span class="">Studio</span>
                     </a>
-                </li>
-                <li class="contact-item">
-                    <a 
-                    class="contact-online link" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="contact-item">
-                    <a class="contact-online link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
+        <address class="footer-address">
+            <li class="footer-address__item">
+                <a
+                class="footer-address__map link"
+                href="https://goo.gl/maps/CBitLUG9dkGeT7Bq6"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                г. Киев, пр-т Леси Украинки, 26
+                </a>
+            </li>
+            <li class="footer-address__item">
+                <a class="footer-address__link link" href="mailto:info@example.com"
+                >info@example.com</a
+                >
+            </li>
+            <li class="footer-address__item">
+                <a class="footer-address__link link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+                >
+            </li>
+        </ul>
         </address>
         </div>
         <div class="footer-social">
-            <p class="footer-text">присоединяйтесь</p>
-        <ul class="list footer-social-list">
-            <li class="footer-social-item">
-            <a href="" class="footer-social-link">
-            <svg widht="20" height="20">
+            <p class="footer__text">присоединяйтесь</p>
+        <ul class="list social__list">
+            <li class="social__item">
+            <a href="" class="social__link social__link--footer">
+                <svg widht="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
+                </svg>
             </a>
-        </li>
-        <li class="footer-social-item">
-            <a href="" class="footer-social-link">
-            <svg widht="20" height="20">
+            </li>
+            <li class="social__item">
+            <a href="" class="social__link social__link--footer">
+                <svg widht="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
-            </svg>
+                </svg>
             </a>
-        </li>
-        <li class="footer-social-item">
-            <a href="" class="footer-social-link">
-            <svg widht="20" height="20">
+            </li>
+            <li class="social__item">
+            <a href="" class="social__link social__link--footer">
+                <svg widht="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
+                </svg>
             </a>
-        </li>
-        <li class="footer-social-item">
-            <a href="" class="footer-social-link">
-            <svg widht="20" height="20">
+            </li>
+            <li class="social__item">
+            <a href="" class="social__link social__link--footer">
+                <svg widht="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
+                </svg>
             </a>
-        </li>
+            </li>
         </ul>
         </div>
         <div class="footer-form">
-            <p class="footer-text">Подпишитесь на рассылку</p>
-            <div class="footer-form-feedback">
+            <p class="footer__text">Подпишитесь на рассылку</p>
+            <div class="footer-form__feedback">
             <label for="email">
             <input 
-                type="email" 
-                name="email" 
-                id="email"
-                class="footer-form-input"
-                placeholder="E-mail"
-                required>
+            type="email" 
+            name="email" 
+            id="email"
+            class="footer-form__input"
+            placeholder="E-mail"
+            required>
             </label>
-            <button type="submit" class="footer-btn">Подписаться<svg widht="24" height="24">
+            <button type="submit" class="footer__btn">Подписаться<svg widht="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-telegram-form"></use>
-            </svg></button>
+                </svg></button>
             </div>
         </div>  
         </div>
