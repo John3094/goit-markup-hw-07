@@ -1,4 +1,8 @@
-.about-title {
+.about {
+    align-items: center;
+}
+
+.about__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -8,19 +12,19 @@
     margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
     display: flex;
     margin-top: 50px;
 }
 
-.about-item {
+.about__item {
     position: relative;
     &:not(:last-child) {
     margin-right: 30px;
     }
 }
 
-.about-item-text {
+.about__text {
     position: absolute;
     bottom: 0;
     left: 0;

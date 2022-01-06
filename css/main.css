@@ -319,21 +319,20 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
 .header-list {
   display: flex;
 }
 
-.header-navigation {
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__navigation {
   display: flex;
   align-items: center;
 }
 
-.header-link {
+.header__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -346,11 +345,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover, .header-link:focus {
+.header__link:hover, .header__link:focus {
   color: var(--accent-text-color);
 }
 
-.header-link.current::after {
+.header__link--current::after {
   position: absolute;
   content: "";
   display: block;
@@ -361,11 +360,12 @@ body {
   border-radius: 2px;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 50px;
+.header__connect {
+  margin-left: auto;
+  display: flex;
 }
 
-.header-mail {
+.header__connect--mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -378,7 +378,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail:hover, .header-mail:focus {
+.header__connect--mail:hover, .header__connect--mail:focus {
   color: var(--accent-text-color);
 }
 
@@ -387,7 +387,7 @@ body {
   margin-right: 10px;
 }
 
-.header-tel {
+.header__connect--tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -401,18 +401,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel:hover, .header-tel:focus {
+.header__connect--tel:hover, .header__connect--tel:focus {
   color: var(--accent-text-color);
 }
 
 .tel {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.header-connect {
-  margin-left: auto;
-  display: flex;
 }
 
 .hero {
@@ -430,7 +425,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: auto;
@@ -445,7 +440,7 @@ body {
   color: var(--main-tittle-color);
 }
 
-.hero-button {
+.hero__button {
   margin-top: 30px;
   align-items: center;
   text-align: center;
@@ -458,20 +453,20 @@ body {
   padding-bottom: 0;
 }
 
-.features-container {
+.features__container {
   display: flex;
 }
 
-.features-list {
+.features__list {
   display: flex;
   margin-left: 30px;
 }
 
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -481,14 +476,14 @@ body {
   margin-bottom: 10px;
 }
 
-.features-text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
-.features-svg {
+.features__svg {
   display: flex;
   background: #f5f4fa;
   border-radius: 4px;
@@ -499,7 +494,11 @@ body {
   height: 120px;
 }
 
-.about-title {
+.about {
+  align-items: center;
+}
+
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -509,20 +508,20 @@ body {
   margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
   display: flex;
   margin-top: 50px;
 }
 
-.about-item {
+.about__item {
   position: relative;
 }
 
-.about-item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-item-text {
+.about__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -547,7 +546,7 @@ body {
   align-items: center;
 }
 
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -557,13 +556,13 @@ body {
   margin-bottom: 50px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.team-item {
+.team__item {
   flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
   background: #ffffff;
@@ -571,7 +570,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-second-title {
+.team__title--second {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -580,7 +579,7 @@ body {
   color: var(--second-tittle-color) #212121;
 }
 
-.team-text {
+.team__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -589,27 +588,27 @@ body {
   margin-top: 10px;
 }
 
-.team-item-bottom {
+.team__name {
   padding-top: 30px;
 }
 
-.team-social-list {
+.social__list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
 }
 
-.team-social-item {
+.social__item {
   width: 44px;
   height: 44px;
 }
 
-.team-social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-social-link {
+.social__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -623,12 +622,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-link:hover, .team-social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--social-accent-color);
   fill: #fff;
 }
 
-.client-title {
+.client {
+  align-items: center;
+}
+
+.client__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -638,16 +641,12 @@ body {
   margin-bottom: 50px;
 }
 
-.client-logo {
-  fill: currentColor;
-}
-
-.client-list {
+.client__list {
   display: flex;
   justify-content: center;
 }
 
-.client-item {
+.client__item {
   display: block;
   justify-content: center;
   align-items: center;
@@ -655,11 +654,11 @@ body {
   height: 92px;
 }
 
-.client-item:not(:last-child) {
+.client__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -674,9 +673,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover, .client-link:focus {
+.client__link:hover, .client__link:focus {
   border-color: var(--social-accent-color);
   color: var(--social-accent-color);
+}
+
+.client__logo {
+  fill: currentColor;
 }
 
 .footer {
@@ -685,7 +688,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -711,7 +714,7 @@ body {
   outline: none;
 }
 
-.contact-list {
+.footer__list {
   display: block;
 }
 
